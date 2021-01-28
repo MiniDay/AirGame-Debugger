@@ -1,0 +1,9 @@
+name: AirGame-Debugger
+version: ${project.version}
+main: net.airgame.bukkit.debug.DebugPlugin
+api-version: 1.16
+
+commands:
+  debug:
+    permission: airgame.debug
+    permission-message: §c你没有这个权限
