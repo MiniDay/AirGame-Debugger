@@ -21,7 +21,7 @@ public final class DebugPlugin extends JavaPlugin {
             System.out.println("创建插件存档文件夹.");
         }
         final ClassLoader loader = Thread.currentThread().getContextClassLoader();
-        final ClassLoader cl = this.getClass().getClassLoader();
+        final ClassLoader cl = getClassLoader();
         Thread.currentThread().setContextClassLoader(cl);
         this.engine = new ScriptEngineManager().getEngineByName("JavaScript");
         Thread.currentThread().setContextClassLoader(loader);
